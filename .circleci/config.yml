@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: felicianotech/docker-hugo:0.47.1
     working_directory: ~/project
+    branches:
+      only:
+        - master
     steps:
       - checkout
       - run: |
