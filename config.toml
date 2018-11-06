@@ -4,12 +4,12 @@ canonifyurls        = true
 contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
-publishdir          = "docs"
+publishdir          = "publish"
 theme               = "cocoa"
 author              = "Rahman Mousavian"
 title               = "Random Thoughts; or maybe systematic"
 pygmentsuseclasses  = true
-disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
+disqusshortname     = "moosavian-ir" # Comment out to disable Disqus.
 pluralizelisttitles = false
 googleAnalytics     = "UA-123-45"
 
