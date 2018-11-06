@@ -1,0 +1,81 @@
+baseurl             = "https://moosavian.ir"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "docs"
+theme               = "cocoa"
+author              = "Rahman Mousavian"
+title               = "Random Thoughts; or maybe systematic"
+pygmentsuseclasses  = true
+disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
+pluralizelisttitles = false
+googleAnalytics     = "UA-123-45"
+
+[permalinks]
+blog  = "blog/:slug/"
+
+[[menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[menu.main]]
+name                   = "Résumé"
+weight                 = -110
+identifier             = "resume"
+url                    = "/resume/latest.pdf"
+
+[[menu.main]]
+name                   = "Code"
+weight                 = -100
+identifier             = "code"
+url                    = "/code/"
+
+[params]
+include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = false                         # whether to display small country flags for available translations
+author                 = "Rahman Mousavian"
+cachebuster            = false                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "Jan 2, 2006"
+dateformfull           = "Mon Jan 2 2006 15:04:05 MST"
+description            = "Don't panic"
+email                  = "mousavian.rahman@gmail.com"
+extracssfiles          = [ "/css/override.css?v=1", "https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha22/dist/font-face.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/leaf.ico"
+github                 = "//github.com/mousavian"
+instagram              = "//instagram.com/mousavian"
+px500                  = ""
+lang                   = "en"
+linkedin               = "//linkedin.com/in/mousavian"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = ""                            # appears in the site header when set to a non-empty string
+twitter                = "//twitter.com/mousavian"
+mastodon               = ""
+telegram               = ""
+
+highlightjs            = true
+# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
+
+piwik                  = false                         # If true, Piwik integration is enabled
+# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
+# piwik_id             = 2                             # Id of your site in Piwik
+
+gitalk                 = false
+# if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
+gitalk_clientID        = "your client id"
+gitalk_clientSecret    = "your client secret"
+gitalk_repo            = "your repo url"
+gitalk_owner           = "the owner of this repo"
+gitalk_admin           = ['a', 'list', 'of', 'administrator']
+
+# avatar                 = "img/profile.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+gravatar               = "60aa21454d011c549811536858d3c597"                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+
+# The following are DEPRECATED.
+gatracker              = "XYZ" # use googleAnalytics instead
+initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.

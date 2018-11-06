@@ -1,0 +1,24 @@
+/* override css styles of the main theme here */
+.container .content.rtl {
+  direction: rtl;
+  font-family: sahel;
+}
+
+.container .content.rtl .page-heading {
+  font-family: sahel;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container .content.rtl h1,
+.container .content.rtl h2,
+.container .content.rtl h3,
+.container .content.rtl h4,
+.container .content.rtl h5,
+.container .content.rtl h6 {
+  font-family: sahel !important;
+}
+
+.post-item a span {
+  font-family: sahel;
+}
