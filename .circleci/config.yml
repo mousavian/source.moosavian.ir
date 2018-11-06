@@ -19,6 +19,7 @@ jobs:
           name: "Publish"
           command: |
               cd publish
+              git config user.email "${PERSONAL_EMAIL}"
               git config user.name "CircleCI"
               git add .
               git commit -m "Update"
