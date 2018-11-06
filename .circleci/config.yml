@@ -21,7 +21,6 @@ jobs:
               cd publish
               git config user.email "${PERSONAL_EMAIL}"
               git config user.name "CircleCI"
-              git remote add origin https://github.com/mousavian/moosavian.ir.git
               git pull origin/master
               git checkout master
               git add .
