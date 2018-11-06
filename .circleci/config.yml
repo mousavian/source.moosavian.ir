@@ -15,12 +15,11 @@ jobs:
       - run:
           name: "Test Website"
           command: htmlproofer ./docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
-      - run: |
-          ls -lah ./docs
-          cd docs
-          git status
-          git remote -v
-          git config user.name "CircleCI"
-          git add .
-          git commit -m "Update"
-          git push -q https://$`{PERSONAL_GITHUB_TOKEN}@github.com/mousavian/moosavian.ir.git master
+      - run:
+          name: "Publish"
+          command: |
+              cd publish
+              git config user.name "CircleCI"
+              git add .
+              git commit -m "Update"
+              git push -q https://$`{PERSONAL_GITHUB_TOKEN}@github.com/mousavian/moosavian.ir.git master
