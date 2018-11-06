@@ -5,15 +5,14 @@ jobs:
       - image: felicianotech/docker-hugo:0.47.1
     working_directory: ~/project
     steps:
-      - run: pwd && ls -lah && ls -lah ~/project
       - checkout
-      - run: git submodule sync
-      - run: git submodule update --init
-      - run: pwd && ls -lah && ls -lah ~/project
+      - run: |
+          git submodule sync
+          git submodule update --init
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v
       - run:
           name: "Test Website"
           command: htmlproofer ./docs --allow-hash-href --check-html --empty-alt-ignore --disable-external
-
+      - run: ls -lah ./docs && cd docs && git status
