@@ -5,10 +5,11 @@ jobs:
       - image: felicianotech/docker-hugo:0.47.1
     working_directory: ~/project
     steps:
+      - run: pwd && ls -lah && ls -lah ~/project
       - checkout
-      - run:
-          name: "LS"
-          command: pwd && ps -lah && which hugo && hugo version
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run: pwd && ls -lah && ls -lah ~/project
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -s src/
