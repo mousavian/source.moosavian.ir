@@ -1,6 +1,6 @@
 [submodule "themes/cocoa"]
 	path = themes/cocoa
 	url = https://github.com/nishanths/cocoa-hugo-theme.git
-[submodule "publish"]
+[submodule "docs"]
 	path = publish
 	url = git@github.com:mousavian/moosavian.ir.git
