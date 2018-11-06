@@ -20,4 +20,5 @@ jobs:
           cd docs
           git status
           git remote -v
-
+          git config user.name "New updated via CircleCI"
+          git push -q https://${PERSONAL_GITHUB_TOKEN}@github.com/mousavian/moosavian.ir.git master
