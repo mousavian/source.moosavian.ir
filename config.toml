@@ -1,4 +1,4 @@
-baseurl             = "https://moosavian.ir"
+baseurl             = "https://mousavian.github.io/moosavian.ir/"
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
