@@ -23,4 +23,4 @@ jobs:
               git config user.name "CircleCI"
               git add .
               git commit -m "Update"
-              git push -q https://$`{PERSONAL_GITHUB_TOKEN}@github.com/mousavian/moosavian.ir.git master
+              git push -q https://${PERSONAL_GITHUB_TOKEN}@github.com/mousavian/moosavian.ir.git master
